@@ -13,6 +13,8 @@ Batch_size=128
 Aktivasyon fonksiyonu ReLu, l2 regularizasyonu uygulama.
 Optimizer Adam(learning_rate=0.0001).
 early_stopping monitör değeri val_loss olarak alındı.
+Özellik çıkarma adımları(CNN) uygulanmamıştır. ANN kullanılarak çalışıldı.
+
 100 epoch ardından early_stopping’e takılmadan elde edilen değerler:
 Loss: 1.5233824253082275
 Accuracy: 0.6951388716697693
