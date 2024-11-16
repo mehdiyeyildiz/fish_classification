@@ -11,21 +11,22 @@ Veri seti 9 farklı balık türünü içeren homojen dağılımlı 9000 görseld
 + X’leri standartlaştırma.
 + Y hedef değişkenini one-hot encode etme.
 + Veriye shuffle işlemi uygulayıp train, validasyon, test seti ayrımı yapma.
-+ Train seti için data augmentation işlemi uygulama.
++ Train seti için data augmentation işlemi uygulanmadı. Çünkü öğrenme sürecini olumsuz etkiledi.
 + Batch_size=128
-+ 7 adet gizli nöron katmanı, her katman için BatchNormalization işlemi ve Dropout(%20) uygulama.
++ 5 adet gizli nöron katmanı, her katman için BatchNormalization işlemi ve Dropout(0.2) uygulama.
 + Aktivasyon fonksiyonu ReLu, l2 regularizasyonu uygulama.
 + Optimizer Adam(learning_rate=0.0001).
 + early_stopping monitör değeri val_loss olarak alındı.
 + Özellik çıkarma adımları(CNN) uygulanmamıştır. ANN kullanılarak çalışıldı.
 
-### 100 epoch ardından early_stopping’e takılmadan elde edilen değerler:
-+ Loss: 1.5233824253082275
-+ Accuracy: 0.6951388716697693
-+ AUC: 0.9659389853477478
+### 100 epoch ardından early_stopping ile 40. epoch için elde edilen değerler:
++ Loss: 1.3800170421600342
++ Accuracy: 0.8993055820465088
++ AUC: 0.9909536838531494
 
 ### Test seti için elde edilen sonuçlar:
-+ Weighted Precision: 0.7363105882457222
-+ Weighted Recall: 0.7111111111111111
-+ Weighted F1 Score: 0.7006632692171472
++ Weighted Accuracy: 0.8883333333333333
++ Weighted Precision: 0.9043748810777505
++ Weighted Recall: 0.8883333333333333
++ Weighted F1 Score: 0.8903298544137181
 şeklinde gözlemlendi.
