@@ -2,6 +2,10 @@
 
 Çalışma dosyama kaggle üzerinden de erişebilirsiniz. [Kaggle Linki](https://www.kaggle.com/code/mehdiyeyldz/fish-classification-2)
 
+### Veri seti ve çalışma amacı
+Veri seti 9 farklı balık türünü içeren homojen dağılımlı 9000 görselden oluşmaktadır.
+Çalışmada CNN kullanılmadan, yalnızca ANN kullanılarak balık sınıflarının tahmin edilmesi amaçlanmıştır.
+
 ### Çalışmamı yürütürken özetle şu adımları izledim:
 + Görselleri okutup X,y alarak özellikler ve hedef değişkeni ayırma,
 + X’leri standartlaştırma.
