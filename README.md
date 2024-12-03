@@ -1,4 +1,4 @@
-# fish_classification
+# fish_classification_with_ANN
 
 Çalışma dosyama kaggle üzerinden de erişebilirsiniz. [Kaggle Linki](https://www.kaggle.com/code/mehdiyeyldz/fish-classification-2)
 
@@ -19,6 +19,7 @@ Veri seti 9 farklı balık türünü içeren homojen dağılımlı 9000 görseld
 + early_stopping monitör değeri val_loss olarak alındı.
 + Özellik çıkarma adımları(CNN) uygulanmamıştır. ANN kullanılarak çalışıldı.
 
+##### Son çalışmamda elde ettiğim sonuçlar aşağıdaki gibidir. Farklı train setleri için farklı fakat benzer sonuçlar gelecektir.
 ### 100 epoch ardından early_stopping ile 40. epoch için elde edilen değerler:
 + Loss: 1.3800170421600342
 + Accuracy: 0.8993055820465088
